@@ -1,0 +1,28 @@
+Para permutar las filas, seguimos el sig proceso:
+linea 1->rand(n_filas)->intercambiamos 1 <-> r
+linea 2->rand(n_filas)->intercambiamos 2 <-> r
+linea 3->rand(n_filas)->intercambiamos 3 <-> r
+linea 4->rand(n_filas)->intercambiamos 4 <-> r
+linea 5->rand(n_filas)->intercambiamos 5 <-> r
+
+---formato fichero texto [pert.per]---
+MP-PER-T 5\n
+1\n
+2\n
+3\n
+4\n
+0\n
+
+----------------------------
+podemos generar el fichero a mano y para probar que funciona
+en vez de hacer:
+./permutacion lenna.pgm pert.per codif.pgm
+hacemos:
+./permutacion lenna.pgm codif.pgm < pert.per
+-------------------------------
+ocultar y revelar no hay que usar E/S ficheros,
+con un cin /cout simple basta.
+los mensajes/errores por cerr
+usar la implementacion en GRIS, la de color la omitimos
+---------------------------------
+clase imagen, implementar const, dest, operador asig.
